@@ -1,4 +1,6 @@
 class Board
+  attr_reader :cell, :board_positions
+  attr_accessor :available_slots
     #attributes 
     #declare the class
     #bord is composed by array 
