@@ -1,24 +1,33 @@
 class Board
-  attr_reader :cell, :board_positions
-  attr_accessor :available_slots
-    #attributes 
-    #declare the class
-    #bord is composed by array 
-    #bord is composed by cells
-    #define attirbutes 
+    attr_reader :cell, :board_positions
+    attr_accessor :available_slots
 
-  def initialize   
-    #empty array 3 x 3
-def display 
-    #postions #[1..9]
-    #define method to display the bord 
+  def initialize 
+    @cell = [['','',''],['','',''],['','','']]
+    @available_slots = *(1..9)
+    @board_positions = {1 =>[0, 0], 2 => [0, 1], 3 => [0, 2],
+                        4  =>[1, 0], 5 => [1, 1], 6 => [1, 2], 
+                        7  =>[2, 0], 8 => [2, 1], 9 => [2, 2]}
+  end
 
-def available moves 
-    #positions avalable 
+  def display_board 
+    " #{@cell[0][0]} | #{@cell[0][1]} | #{@cell[0][2]}  \n --+---+--\n" \
+    " #{@cell[1][0]} | #{@cell[1][1]} | #{@cell[1][2]}  \n --+---+--\n" \
+    " #{@cell[2][0]} | #{@cell[2][1]} | #{@cell[2][2]}  \n "
+  end
 
-def check_draw
-   #checks if available moves is empty so it means it draw
+  def display_available_slots
+    available_slots.join(', ')
+  end
 
-def updated_available_moves
-    #each move that has been taken has to be removed 
+  def check_draw
+    available_slots.empty?
+  end   
+
+  def updated_available_slots(val)
+    available_slots.reject! { |move| move == val }
+  end
 end
+
+angela = Board.new()
+puts angela.display_board
