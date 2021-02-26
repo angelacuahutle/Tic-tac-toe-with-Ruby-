@@ -17,6 +17,6 @@ def available moves
 def check_draw
    #checks if available moves is empty so it means it draw
 
-def updated available_moves
+def updated_available_moves
     #each move that has been taken has to be removed 
 end
