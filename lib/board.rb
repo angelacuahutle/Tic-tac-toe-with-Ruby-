@@ -29,5 +29,6 @@ class Board
   end
 end
 
-angela = Board.new()
-puts angela.display_board
+board = Board.new()
+puts board.display_board
+
