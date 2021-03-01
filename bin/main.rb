@@ -16,12 +16,23 @@ end
 
 def introduction(board)
   puts "Welcome to TIC-TAC-TOE game\n\n"
-  puts board.display
+  puts board.display_board
   puts "\nType in your names to start this awesome game\n"
 end
 
 def get_player(position)
-  
+  puts "\nEnter name of #{position} Player"
+  player = gets.chomp
+  puts "\nWelcome #{player}"
+  player 
+end
+
+def start_game(player_x, player_o)
+  if rand(0..1).zero?
+    player_o
+  else
+    player_x
+  end
 end
 
 puts 'Hello World!'
