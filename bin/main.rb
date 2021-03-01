@@ -15,9 +15,13 @@ def tic_tac_toe
 end
 
 def introduction(board)
+  puts "Welcome to TIC-TAC-TOE game\n\n"
+  puts board.display
+  puts "\nType in your names to start this awesome game\n"
 end
 
 def get_player(position)
+  
 end
 
 puts 'Hello World!'
