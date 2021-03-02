@@ -12,7 +12,7 @@ class Player
   def play(board, value)
     @selection << value
     board.cell[board.board_positions[value][0]][board.board_positions[value][1]] = @marker
-    board.display
+    board.display_board
   end
 
   def check_winner

@@ -10,14 +10,14 @@ def tic_tac_toe
   introduction(board)
   player_x.name = get_player('first')
   player_o.name = get_player('second')
-  puts "\nLet the game begin"
+  puts "\nLet the game begin!"
   play_game(player_x, player_o, board) 
 end
 
 def introduction(board)
   puts "Welcome to TIC-TAC-TOE game\n\n"
   puts board.display_board
-  puts "\nType in your names to start this awesome game\n"
+  puts "\nType in your names to start the game\n"
 end
 
 def get_player(position)
@@ -54,10 +54,10 @@ def get_value(board)
   value = gets.chomp.to_i
   until board.available_slots.include?(value)
     puts "\nError! Error! Please select an availabe slot"
-    puts "\nAvailable slots: #{board.display_availble_slots}\n"
+    puts "\nAvailable slots: #{board.display_available_slots}\n"
     value = gets.chomp.to_i
   end
-  board.update_availble_slots(value)
+  board.update_available_slots(value)
   value
 end
 
@@ -73,5 +73,4 @@ def check_win_or_draw(turn_to_play, board)
     end
  end 
 
-
-puts 'Hello World!'
+tic_tac_toe
