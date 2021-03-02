@@ -35,4 +35,23 @@ def start_game(player_x, player_o)
   end
 end
 
+def play_game(player_x, player_o, board)
+  turn_to_play = start_game(player_x, player_o)
+  puts "\n#{turn_to_play.name} is starting the game!"
+  play = true
+  while play
+    puts "\n #{turn_to_play.name} make a selection!"
+    value = get_value(board)
+    puts "\n"
+    puts turn_to_play.play(board, value)
+    play = check_win_or_draw(turn_to_play, board)
+    turn_to_play = turn_to_play == player_x ? player_o : player_x
+  end
+end 
+
+def get_value
+  #position in the array
+
+def check_win_or_draw
+
 puts 'Hello World!'
