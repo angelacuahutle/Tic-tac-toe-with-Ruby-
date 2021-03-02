@@ -11,7 +11,7 @@ def tic_tac_toe
   player_x.name = get_player('first')
   player_o.name = get_player('second')
   puts "\nLet the game begin!"
-  play_game(player_x, player_o, board) 
+  play_game(player_x, player_o, board)
 end
 
 def introduction(board)
@@ -24,7 +24,7 @@ def get_player(position)
   puts "\nEnter name of #{position} Player"
   player = gets.chomp
   puts "\nWelcome #{player}"
-  player 
+  player
 end
 
 def start_game(player_x, player_o)
@@ -47,7 +47,7 @@ def play_game(player_x, player_o, board)
     play = check_win_or_draw(turn_to_play, board)
     turn_to_play = turn_to_play == player_x ? player_o : player_x
   end
-end 
+end
 
 def get_value(board)
   puts "\nAvailable slots: #{board.display_available_slots}\n"
@@ -62,15 +62,15 @@ def get_value(board)
 end
 
 def check_win_or_draw(turn_to_play, board)
-    if turn_to_play.check_winner
-     puts "\nCongratulation #{turn_to_play.name}, you won !!!"
-     false
-    elsif board.check_draw
-     puts "\nWow, its a tie. Game ends"
-     false
-    else
-     true
-    end
- end 
+  if turn_to_play.check_winner
+    puts "\nCongratulation #{turn_to_play.name}, you won !!!"
+    false
+  elsif board.check_draw
+    puts "\nWow, its a tie. Game ends"
+    false
+  else
+    true
+  end
+end
 
 tic_tac_toe
