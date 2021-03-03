@@ -3,24 +3,24 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Tic-tac-toe-with-Ruby-
-Tic-tac-toe with Ruby
 
 > This is the third project in the Ruby module. In this project, we built a Tic-Tac-Toe game where we used the functionality of multiple files we built: main.rb board.rb player.rb
 
-![screenshot](./app_screenshot.png)(images/Ticimage1.png)(images/image1.png)
+![screenshot](images/image1.png)
+![screenshot](images/image2.png)
+![screenshot](images/image3.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
+- VS Code 
 
 
 ## Getting Started
 
-- Clone the repository $ git clone git@github.com:aliciapaz/tictactoe.git
+- Clone the repository $ git clone git@github.com:angelacuahutle/Tic-tac-toe-with-Ruby-.git
 - Open Terminal using (CTRL + ALT + T)
 - $ cd to the clone repository
 - Run the command $ bin/main.rb
