@@ -49,4 +49,16 @@ def play_game(player_x, player_o, board)
   end
 end
 
+def get_value(board)
+  puts "\nAvailable slots: #{board.display_available_slots}\n"
+  value = gets.chomp.to_i
+  until board.available_slots.include?(value)
+    puts "\nError! Error! Please select an availabe slot"
+    puts "\nAvailable slots: #{board.display_available_slots}\n"
+    value = gets.chomp.to_i
+  end
+  board.update_available_slots(value)
+  value
+end
+
 
