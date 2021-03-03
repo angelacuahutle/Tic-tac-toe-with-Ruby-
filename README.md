@@ -4,7 +4,7 @@
 
 # Tic-tac-toe-with-Ruby-
 
-> This is the third project in the Ruby module. In this project, we built a Tic-Tac-Toe game where we used the functionality of multiple files we built: main.rb board.rb player.rb
+> In this project, we built a Tic-Tac-Toe game. Tic-tac-toe is a game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's (noughts and crosses). This has been implemented using Object Oriented Programming in Ruby Language.
 
 ![screenshot](images/image1.png)
 ![screenshot](images/image2.png)
@@ -25,25 +25,29 @@ Additional description about the project and its features.
 - $ cd to the clone repository
 - Run the command $ bin/main.rb
 
-### Prerequisites
+## Prerequisites
 
-|x| Install at least one code editor
-|x| Install Ruby to execute the project
+- Install at least one code editor
+- Install Ruby to execute the project
 
-### Rules
+## Rules
 
-The game is played on a grid that's 3 squares by 3 squares.
+- The game board is a 3x3 array with 9 available spots.
 
-You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
+- The game is played by two players at a time
 
-The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+- One player choses the symbol(or marker O) and the other choses the symbol(or marker X)
 
-When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
+- Player select slots on the board and switch turns after each selection.
+
+- A player wins if he/she makes three consecutive selections in the horizontal, vertical or diagonal lines.
+
+- If all slots are full and there is no winner, then it's a draw and the game
 
 ### Build with
 
-Ruby
-Visual Studio Code
+- Ruby
+- Visual Studio Code
 
 ## Authors
 
@@ -63,7 +67,7 @@ Visual Studio Code
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/angelacuahutle/Tic-tac-toe-with-Ruby-/issues).
 
 ## Show your support
 
@@ -71,4 +75,24 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+MIT License
+
+Copyright (c) 2021 Angela Cuahutle and Mih Julius Ndim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
