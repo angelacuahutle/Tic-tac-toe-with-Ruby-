@@ -11,9 +11,9 @@ class Board
   end
 
   def display_board
-    " #{@cell[0][0]} | #{@cell[0][1]} | #{@cell[0][2]}  \n---+---+---\n" \
-    " #{@cell[1][0]} | #{@cell[1][1]} | #{@cell[1][2]}  \n---+---+---\n" \
-    " #{@cell[2][0]} | #{@cell[2][1]} | #{@cell[2][2]}  \n "
+    " #{@cell[0][0]}  | #{@cell[0][1]}  | #{@cell[0][2]}  \n---+---+---\n" \
+    " #{@cell[1][0]}  | #{@cell[1][1]}  | #{@cell[1][2]}  \n---+---+---\n" \
+    " #{@cell[2][0]}  | #{@cell[2][1]}  | #{@cell[2][2]}  \n "
   end
 
   def display_available_slots
