@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require_relative '../lib/player'
 require_relative '../lib/board'
@@ -11,7 +12,7 @@ def tic_tac_toe
   player_x.name = get_player('first')
   player_o.name = get_player('second')
   puts "\nLet the game begin"
-  play_game(player_x, player_o, board) 
+  play_game(player_x, player_o, board)
 end
 
 def introduction(board)
@@ -74,5 +75,3 @@ def check_win_or_draw(turn_to_play, board)
 end
 
 tic_tac_toe
-
-

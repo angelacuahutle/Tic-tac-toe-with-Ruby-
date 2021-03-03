@@ -28,5 +28,3 @@ class Board
     available_slots.reject! { |move| move == value }
   end
 end
-
-
