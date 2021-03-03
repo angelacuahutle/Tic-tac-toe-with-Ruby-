@@ -21,6 +21,10 @@ def introduction(board)
 end
 
 def get_player(position)
+  puts "\nEnter name of #{position} Player"
+  player = gets.chomp
+  puts "\nWelcome #{player}"
+  player
 end
 
 puts 'Hello World!'
