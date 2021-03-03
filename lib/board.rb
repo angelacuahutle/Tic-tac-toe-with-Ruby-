@@ -24,10 +24,9 @@ class Board
     available_slots.empty?
   end
 
-  def update_available_slots(val)
-    available_slots.reject! { |move| move == val }
+  def update_available_slots(value)
+    available_slots.reject! { |move| move == value }
   end
 end
 
-# board = Board.new
-# puts board.display_board
+
