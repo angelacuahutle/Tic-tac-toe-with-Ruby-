@@ -27,4 +27,12 @@ def get_player(position)
   player
 end
 
+def start_game(player_x, player_o)
+  if rand(0..1).zero?
+    player_o
+  else
+    player_x
+  end
+end
+
 puts 'Hello World!'
