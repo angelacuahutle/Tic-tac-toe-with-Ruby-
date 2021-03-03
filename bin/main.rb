@@ -61,4 +61,16 @@ def get_value(board)
   value
 end
 
+def check_win_or_draw(turn_to_play, board)
+  if turn_to_play.check_winner
+    puts "\nCongratulation #{turn_to_play.name}, you won !!!"
+    false
+  elsif board.check_draw
+    puts "\nWow, its a tie. Game ends"
+    false
+  else
+    true
+  end
+end
+
 
