@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Board
   attr_reader :cell, :board_positions
   attr_accessor :available_slots
