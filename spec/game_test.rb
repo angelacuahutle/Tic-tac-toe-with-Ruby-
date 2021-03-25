@@ -22,3 +22,21 @@ describe Board do
     end
   end
 end
+
+describe Player do
+  describe "#check_winner" do
+    it "checks a winner" do
+      # example conditions: let(:variable) { ... }
+      # selection true
+      # player 2 moves
+      expect(available_slots.empty?).to be true
+    end
+
+    it "checks no winner" do
+      # example conditions: let(:variable) { ... }
+      # player 1 moves
+      # player 2 moves
+      expect(available_slots.empty?).to be false
+    end
+  end
+end
