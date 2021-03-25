@@ -22,7 +22,7 @@ class Player
     if @selection.length >= 3
       wins = []
       WINNING_COMBINATIONS.each do |posible_wins|
-        wins.push(( == posibl@selection.sort & posible_wins)e_wins)
+        wins.push((@selection.sort & posible_wins) == posible_wins)
       end
       winner = wins.any?
     end
