@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Board
   attr_reader :cell, :board_positions
   attr_accessor :available_slots
@@ -30,6 +28,3 @@ class Board
     available_slots.reject! { |move| move == value }
   end
 end
-
-# board = Board.new
-# puts board.display_board
