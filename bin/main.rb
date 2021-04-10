@@ -1,17 +1,14 @@
 #!/usr/bin/env ruby
-# frozen_string_literal: true
-
-
 require_relative '../lib/player'
 require_relative '../lib/board'
 
 def tic_tac_toe
-  player_x = Player.new('', 'X')
-  player_o = Player.new('', 'O')
   board = Board.new
   introduction(board)
-  player_x.name = get_player('first')
-  player_o.name = get_player('second')
+  first_player = get_player('first')
+  second_player = get_player('second')
+  player_x = Player.new(first_player, 'X')
+  player_o = Player.new(second_player, 'O')
   puts "\nLet the game begin!"
   play_game(player_x, player_o, board)
 end
@@ -76,4 +73,3 @@ def check_win_or_draw(turn_to_play, board)
 end
 
 tic_tac_toe
-
